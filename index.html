@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odesy | Agencia de Marketing, Estrategia & Tecnología</title>
+  <meta name="description" content="Odesy es una agencia de estrategia empresarial, publicitaria, marketing digital, tecnología y producción de contenidos enfocada en el crecimiento real de los negocios.">
+  
+  <!-- Fonts: Work Sans (400, 600, 700, 800) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- DUAL CURSOR SYSTEM -->
+  <div id="custom-cursor-dot" class="custom-cursor-dot" aria-hidden="true"></div>
+  <div id="custom-cursor-circle" class="custom-cursor-circle" aria-hidden="true"></div>
+
+  <!-- FLOATING CUSTOM SCROLLBAR (Despegada del borde, compacta y flotante) -->
+  <div id="floating-scrollbar-track" class="floating-scrollbar-track" aria-hidden="true">
+    <div id="floating-scrollbar-thumb" class="floating-scrollbar-thumb"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <!-- Left Navigation Group -->
+      <nav class="navbar-nav nav-left">
+        <a href="#equipo" class="nav-link interactive">Equipo</a>
+        <a href="#metodologia" class="nav-link interactive">Servicios</a>
+      </nav>
+
+      <!-- Centered Logo -->
+      <a href="#" class="navbar-brand interactive" aria-label="Odesy Home">
+        <img src="LOGOS ODESY/ODESY LOGO.svg" alt="Odesy Logo" class="brand-logo">
+      </a>
+
+      <!-- Right Navigation Group -->
+      <nav class="navbar-nav nav-right">
+        <a href="#proyectos" class="nav-link interactive">Proyectos</a>
+        <a href="#contacto" class="btn btn-contact-nav interactive">Contactar</a>
+      </nav>
+
+      <button class="mobile-toggle interactive" id="mobile-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Container -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#equipo" class="mobile-link">Equipo</a>
+      <a href="#metodologia" class="mobile-link">Servicios</a>
+      <a href="#proyectos" class="mobile-link">Proyectos</a>
+      <a href="#contacto" class="btn btn-contact-nav mobile-btn">Contactar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section custom-dot-grid" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Hero Title with Mixed Typography -->
+          <h1 class="hero-title" id="hero-title">
+            <span class="highlight-odesy-box">
+              <span class="highlight-odesy-text fw-bold">Odesy</span>
+            </span>
+            <span class="hero-static-text fw-regular">Agencia de</span>
+            <span class="dynamic-word-wrapper">
+              <span class="dynamic-word fw-bold" id="dynamic-word">Marketing</span><span class="typewriter-cursor" id="typewriter-cursor">|</span>
+            </span>
+          </h1>
+          <p class="hero-description">
+            Somos un grupo de especialistas en estrategia empresarial y publicitaria, marketing digital, tecnología y producción de contenidos, comprometidos con el crecimiento real de los negocios.
+          </p>
+        </div>
+        
+        <!-- Full-Bleed Video Showcase (Proporción Panorámica Natural sin recorte agresivo) -->
+        <div class="hero-video-fullbleed">
+          <div class="hero-video-wrapper">
+            <video class="hero-video" id="hero-video" autoplay loop muted playsinline poster="">
+              <source src="MEDIA/VIDEO-HOME.mp4" type="video/mp4">
+              Tu navegador no soporta el formato de video.
+            </video>
+            <button class="video-audio-toggle interactive" id="video-audio-toggle" aria-label="Activar/Desactivar sonido">
+              <svg class="icon-muted" id="icon-muted" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+              <svg class="icon-unmuted" id="icon-unmuted" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" style="display: none;">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PORTAFOLIO DE SERVICIOS (TEASER 2-COLUMN LAYOUT) -->
+    <section class="portfolio-teaser-section" id="portafolio">
+      <div class="portfolio-teaser-container">
+        <div class="teaser-left-col">
+          <h2 class="section-title"><span class="fw-regular">Portafolio de</span> <span class="fw-bold">servicios</span></h2>
+          <a href="#metodologia" class="btn btn-secondary interactive">
+            Ver más
+            <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <div class="teaser-right-col">
+          <p class="teaser-copy">
+            Odesy cuenta con un portafolio de servicios integral y una metodología de trabajo que garantiza el fortalecimiento de cada unidad de negocio, asegurando un resultado de imagen y reputación de marca absolutamente unificado y consistente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: METODOLOGÍA (PINNED SCROLL - NÚMEROS A LA IZQUIERDA) -->
+    <section class="pinned-section-wrapper" id="metodologia">
+      <div class="pinned-trigger" id="metodologia-trigger">
+        <div class="pinned-sticky-container" id="metodologia-sticky">
+          <!-- Gradient Background Overlay -->
+          <div class="metodologia-bg-overlay" id="metodologia-bg"></div>
+
+          <!-- Stage 1: Isotipo Scale Up -->
+          <div class="isotipo-stage" id="isotipo-stage">
+            <img src="LOGOS ODESY/ODESY-ISOTIPO.svg" alt="Odesy Isotipo" class="metodologia-isotipo" id="metodologia-isotipo">
+          </div>
+
+          <!-- Stage 2: 3 Pinned Phrases Sequence -->
+          <div class="phrases-stage" id="phrases-stage">
+            <h2 class="metodologia-phrase phrase-1" id="phrase-1">
+              <span class="phrase-part fw-regular">Metodología de trabajo</span> <span class="phrase-part fw-bold phrase-key">integral</span>
+            </h2>
+            <h2 class="metodologia-phrase phrase-2" id="phrase-2">
+              <span class="phrase-part fw-bold phrase-key">Resultado</span> <span class="phrase-part fw-regular">unificado y consistente</span>
+            </h2>
+            <h2 class="metodologia-phrase phrase-3" id="phrase-3">
+              <span class="phrase-part fw-regular">Un proceso diseñado para</span> <span class="phrase-part fw-bold phrase-key">cada etapa de tu marca</span>
+            </h2>
+          </div>
+
+          <!-- Stage 3: Phase Cards Deck (Número a la izquierda) -->
+          <div class="cards-stage" id="cards-stage">
+            <div class="cards-deck" id="cards-deck">
+
+              <!-- Card 1 -->
+              <article class="phase-card interactive" data-phase="1">
+                <div class="phase-card-inner">
+                  <div class="phase-card-text-zone">
+                    <div class="phase-card-top-row">
+                      <span class="phase-badge">01</span>
+                      <div class="phase-title-group">
+                        <span class="phase-subtitle">Fase Inicial</span>
+                        <h3 class="phase-title"><span class="fw-bold">Diagnóstico</span> <span class="fw-regular">& Benchmark</span></h3>
+                      </div>
+                    </div>
+                    <p class="phase-purpose">
+                      "La base de decisión estratégica para lanzar, afinar, reposicionar y consolidar la reputación de las marcas."
+                    </p>
+                    <div class="phase-services-list">
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <span class="service-name">Auditorías de Reputación y Percepción de Marca</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <span class="service-name">Estudios de Benchmarking Competitivo</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </div>
+                        <span class="service-name">Análisis del Ecosistema del Modelo de Negocio</span>
+                      </div>
+                    </div>
+                    <div class="phase-card-footer">
+                      <span class="micro-cta">Explorar Fase 01 &rarr;</span>
+                    </div>
+                  </div>
+                  <div class="phase-card-image-zone">
+                    <img src="FASES/FASE1.jpg" alt="Fase 1 Diagnóstico" class="phase-img">
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="phase-card interactive" data-phase="2">
+                <div class="phase-card-inner">
+                  <div class="phase-card-text-zone">
+                    <div class="phase-card-top-row">
+                      <span class="phase-badge">02</span>
+                      <div class="phase-title-group">
+                        <span class="phase-subtitle">Identidad & Sistema</span>
+                        <h3 class="phase-title"><span class="fw-bold">Branding</span> <span class="fw-regular">Corporativo</span></h3>
+                      </div>
+                    </div>
+                    <p class="phase-purpose">
+                      "Construir marcas memorables con un propósito claro y un sistema unificado que resista el paso del tiempo."
+                    </p>
+                    <div class="phase-services-list">
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <span class="service-name">Arquitectura de Marca y Lanzamientos</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <span class="service-name">Brand Books Completos & Guías Visuales</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <span class="service-name">Estrategias Integrales ATL y BTL</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        </div>
+                        <span class="service-name">Diseño para Eventos Corporativos</span>
+                      </div>
+                    </div>
+                    <div class="phase-card-footer">
+                      <span class="micro-cta">Explorar Fase 02 &rarr;</span>
+                    </div>
+                  </div>
+                  <div class="phase-card-image-zone">
+                    <img src="FASES/FASE2.jpg" alt="Fase 2 Branding" class="phase-img">
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="phase-card interactive" data-phase="3">
+                <div class="phase-card-inner">
+                  <div class="phase-card-text-zone">
+                    <div class="phase-card-top-row">
+                      <span class="phase-badge">03</span>
+                      <div class="phase-title-group">
+                        <span class="phase-subtitle">Narrativa & Voz</span>
+                        <h3 class="phase-title"><span class="fw-regular">Estrategia de</span> <span class="fw-bold">Comunicaciones</span></h3>
+                      </div>
+                    </div>
+                    <p class="phase-purpose">
+                      "Diseñar y estructurar la voz de la marca en un entorno hiperconectado para asegurar mensajes de alto impacto."
+                    </p>
+                    <div class="phase-services-list">
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <span class="service-name">Estrategias de Marca y Planificación Digital</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                        </div>
+                        <span class="service-name">Mensajes Clave y Narrativas de Marca</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        </div>
+                        <span class="service-name">Parrillas de Contenido de Alto Valor</span>
+                      </div>
+                    </div>
+                    <div class="phase-card-footer">
+                      <span class="micro-cta">Explorar Fase 03 &rarr;</span>
+                    </div>
+                  </div>
+                  <div class="phase-card-image-zone">
+                    <img src="FASES/FASE3.jpg" alt="Fase 3 Comunicaciones" class="phase-img">
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="phase-card interactive" data-phase="4">
+                <div class="phase-card-inner">
+                  <div class="phase-card-text-zone">
+                    <div class="phase-card-top-row">
+                      <span class="phase-badge">04</span>
+                      <div class="phase-title-group">
+                        <span class="phase-subtitle">Aceleración & Conversión</span>
+                        <h3 class="phase-title"><span class="fw-bold">Marketing Digital</span> <span class="fw-regular">& Performance</span></h3>
+                      </div>
+                    </div>
+                    <p class="phase-purpose">
+                      "El motor tecnológico de aceleración para asegurar la conversión, la visibilidad y el crecimiento de las ventas."
+                    </p>
+                    <div class="phase-services-list">
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <span class="service-name">Desarrollo Web y Landings de Alta Conversión</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </div>
+                        <span class="service-name">Gestión Estratégica de Redes Sociales</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                        </div>
+                        <span class="service-name">Motion Services & Video Marketing</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        </div>
+                        <span class="service-name">E-commerce Avanzado y Pasarelas</span>
+                      </div>
+                    </div>
+                    <div class="phase-card-footer">
+                      <span class="micro-cta">Explorar Fase 04 &rarr;</span>
+                    </div>
+                  </div>
+                  <div class="phase-card-image-zone">
+                    <img src="FASES/FASE4.jpg" alt="Fase 4 Marketing Digital" class="phase-img">
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5 -->
+              <article class="phase-card interactive" data-phase="5">
+                <div class="phase-card-inner">
+                  <div class="phase-card-text-zone">
+                    <div class="phase-card-top-row">
+                      <span class="phase-badge">05</span>
+                      <div class="phase-title-group">
+                        <span class="phase-subtitle">Multimedia & Eventos</span>
+                        <h3 class="phase-title"><span class="fw-bold">Producción Audiovisual</span> <span class="fw-regular">& Experiencias</span></h3>
+                      </div>
+                    </div>
+                    <p class="phase-purpose">
+                      "Dar vida a las marcas a través de narrativas multimedia excepcionales y experiencias interactivas que dejen huella."
+                    </p>
+                    <div class="phase-services-list">
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                        </div>
+                        <span class="service-name">Producción Video y Audio Multiformato</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <span class="service-name">Motion Graphics y Animaciones 2D/3D</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <span class="service-name">Formatos Especiales de Entretenimiento</span>
+                      </div>
+                      <div class="service-row">
+                        <div class="service-icon-box">
+                          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        </div>
+                        <span class="service-name">Producción Técnica de Eventos</span>
+                      </div>
+                    </div>
+                    <div class="phase-card-footer">
+                      <span class="micro-cta">Explorar Fase 05 &rarr;</span>
+                    </div>
+                  </div>
+                  <div class="phase-card-image-zone">
+                    <img src="FASES/FASE5.jpg" alt="Fase 5 Audiovisual" class="phase-img">
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MARCAS QUE CONFÍAN EN NOSOTROS (GRID 10 CLIENTES CON BORDES) -->
+    <section class="clients-section custom-dot-grid" id="clientes">
+      <div class="clients-container">
+        <h2 class="section-title clients-title"><span class="fw-bold">Marcas</span> <span class="fw-regular">que</span> <span class="fw-bold">confían</span> <span class="fw-regular">en nosotros</span></h2>
+        <div class="clients-grid-wall">
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-1.svg" alt="Cliente 1" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-2.svg" alt="Cliente 2" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-3.svg" alt="Cliente 3" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-4.svg" alt="Cliente 4" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-5.svg" alt="Cliente 5" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-6.svg" alt="Cliente 6" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-7.svg" alt="Cliente 7" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-8.svg" alt="Cliente 8" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-9.svg" alt="Cliente 9" class="client-logo"></div>
+          <div class="client-cell interactive"><img src="CLIENTES/CLIENTE-10.svg" alt="Cliente 10" class="client-logo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: NUESTROS PROYECTOS (BANNERS GRANDES - NUEVO ORDEN DE 1 A 7) -->
+    <section class="projects-pinned-section" id="proyectos">
+      <div class="projects-trigger" id="proyectos-trigger">
+        <div class="projects-sticky-container" id="proyectos-sticky">
+          
+          <div class="projects-header-bar">
+            <h2 class="section-title projects-title"><span class="fw-bold">Nuestros</span> <span class="fw-regular">Proyectos</span></h2>
+            <span class="projects-scroll-hint">Desliza para explorar &rarr;</span>
+          </div>
+
+          <div class="projects-viewport">
+            <div class="projects-track" id="projects-track">
+              
+              <!-- Project 1: Click for Pet -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/Click for Pet.png" alt="Click for Pet" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Click for Pet</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: Fía -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/FiA Belleza segura.png" alt="Fía Belleza Segura" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Fía</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3: Blummer -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/Blumer.png" alt="Blummer" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Blummer</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4: Botawa -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/Botawa Boats Rentails.png" alt="Botawa Boats Rentals" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Botawa</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 5: Ampco -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/AMPCO Constructora.png" alt="Ampco Constructora" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Ampco</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 6: Propfy -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/Propfy Red de Aliadas Comerciales.jpg" alt="Propfy Red de Aliadas Comerciales" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Propfy</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 7: Mayatt -->
+              <div class="project-card interactive">
+                <div class="project-img-wrapper">
+                  <img src="PROYECTOS/Mayatt Eco Luxury Hotel.png" alt="Mayatt Eco Luxury Hotel" class="project-img">
+                  <div class="project-overlay">
+                    <div class="project-info">
+                      <h3 class="project-name">Mayatt</h3>
+                      <button class="btn btn-project-detail interactive">Ver más &rarr;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: EQUIPO DE TRABAJO (SLIDER NARANJA) -->
+    <section class="team-section custom-dot-grid" id="equipo">
+      <div class="team-container">
+        <div class="team-header">
+          <h2 class="section-title"><span class="fw-bold">Equipo</span> <span class="fw-regular">de trabajo</span></h2>
+          <div class="team-slider-controls">
+            <button class="team-nav-btn interactive" id="team-prev" aria-label="Anterior miembro">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button class="team-nav-btn interactive" id="team-next" aria-label="Siguiente miembro">
+              <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="team-slider-track-wrapper">
+          <div class="team-slider-track" id="team-slider-track">
+
+            <!-- Member 1: Ernesto Ruiz -->
+            <div class="team-slide-card interactive">
+              <div class="team-card-inner orange-glow-card">
+                <div class="team-photo-wrapper">
+                  <img src="EQUIPO/ERNESTO.JPG" alt="Ernesto Ruiz" class="team-member-photo">
+                </div>
+                <div class="team-member-info">
+                  <div class="member-header">
+                    <h3 class="member-name">Ernesto Ruiz</h3>
+                    <div class="member-role-badge">CEO</div>
+                  </div>
+                  <a href="#" class="member-handle">@ernestoruizro</a>
+                  <p class="member-bio">
+                    "Referente en tecnología y marketing con más de 25 años de experiencia. Fundador de la red social Blummer, con amplio conocimiento en comportamiento digital y experiencia gestionando marketing y levantando más de $6 millones en capital privado."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 2: Germán Barreneche -->
+            <div class="team-slide-card interactive">
+              <div class="team-card-inner orange-glow-card">
+                <div class="team-photo-wrapper">
+                  <img src="EQUIPO/Germán.jpg" alt="Germán Barreneche" class="team-member-photo">
+                </div>
+                <div class="team-member-info">
+                  <div class="member-header">
+                    <h3 class="member-name">Germán Barreneche</h3>
+                    <div class="member-role-badge">Director Creativo</div>
+                  </div>
+                  <a href="#" class="member-handle">@Germán</a>
+                  <p class="member-bio">
+                    "Llevo más de 25 años recorriendo el ecosistema creativo de Latinoamérica, desde agencias como McCann, Saatchi, Ogilvy y DDB hasta proyectos de industrias tan diversas como funerarias, lujo, wellness y hospitality en Cartagena. En el camino entendí que la creatividad no debe existir por sí misma: debe conectar, resolver y contribuir a un mundo mejor. Creo en una creatividad pragmática, impulsada por insights culturales y capaz de convertir ideas en historias que inspiran, transforman y hacen posible lo inesperado."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Member 3: Janier Junco -->
+            <div class="team-slide-card interactive">
+              <div class="team-card-inner orange-glow-card">
+                <div class="team-photo-wrapper">
+                  <img src="EQUIPO/Janier.jpg" alt="Janier Junco" class="team-member-photo">
+                </div>
+                <div class="team-member-info">
+                  <div class="member-header">
+                    <h3 class="member-name">Janier Junco</h3>
+                    <div class="member-role-badge">Director de producción</div>
+                  </div>
+                  <span class="member-handle member-handle-static">Odesy Team</span>
+                  <p class="member-bio">
+                    "Creativo y apasionado por la producción de contenido visual con más de 6 años de experiencia en diseño gráfico, branding y desarrollo de piezas para redes sociales. Durante los últimos años he integrado diseño, fotografía y producción multimedia para crear contenidos modernos y funcionales. Domino la grabación y edición de videos, así como el manejo de cámaras y equipos en campo. Mi enfoque es generar soluciones visuales, potenciar la identidad de cada marca y aportar valor real a los objetivos del proyecto."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PREGUNTAS FRECUENTES -->
+    <section class="faq-section custom-dot-grid" id="faq">
+      <div class="faq-container">
+        <div class="faq-header">
+          <h2 class="section-title"><span class="fw-bold">Preguntas</span> <span class="fw-regular">frecuentes</span></h2>
+          <div class="faq-controls">
+            <button class="faq-nav-btn interactive" id="faq-prev" aria-label="Pregunta anterior">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <button class="faq-nav-btn interactive" id="faq-next" aria-label="Siguiente pregunta">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="faq-multi-track-wrapper">
+          <div class="faq-track" id="faq-track">
+            <!-- Slide 1 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Trabajan con plantillas o hacen diseño 100% personalizado?</h3>
+                <p class="faq-answer">"Ambos son posibles. Para presupuestos más ajustados contamos con sistemas de diseño de alta calidad que adaptamos a tu identidad de marca. Si buscas algo completamente diferenciado, desarrollamos un diseño exclusivo desde cero para tu marca."</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Qué pasa después de que el sitio queda publicado?</h3>
+                <p class="faq-answer">"El lanzamiento no es el final, es el inicio. Ofrecemos planes de mantenimiento, actualizaciones y monitoreo de rendimiento para que tu sitio siga funcionando y evolucionando con tu negocio."</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Cuáles son mis responsabilidades como cliente durante el proyecto?</h3>
+                <p class="faq-answer">"Buscamos que el proceso sea lo más liviano posible para ti. Te acompañamos en la definición de contenidos, y nos encargamos de la implementación técnica, el diseño, las pruebas y el lanzamiento."</p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Cuánto tiempo toma un proyecto con Odesy?</h3>
+                <p class="faq-answer">"Depende del alcance y la fase en la que ingreses a nuestra cadena de valor. Tras el diagnóstico inicial te entregamos un cronograma claro con hitos y entregables definidos."</p>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Cómo aseguran que la estrategia digital genere un ROI real?</h3>
+                <p class="faq-answer">"Definimos KPIs de negocio claros desde la fase de Diagnóstico. Medimos continuamente conversión, costo de adquisición e interacción para optimizar cada punto de contacto en tiempo real."</p>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="faq-slide-item">
+              <div class="faq-card interactive">
+                <h3 class="faq-question">¿Pueden integrar sistemas existentes de E-commerce o CRM?</h3>
+                <p class="faq-answer">"Sí, nuestro equipo de tecnología conecta tus plataformas de ventas, pasarelas de pago y CRMs mediante APIs personalizadas para mantener tus datos sincronizados."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: LO QUE DICEN NUESTROS CLIENTES (TARJETAS BLANCAS CON COMILLAS GRANDES Y ANIMACIÓN FLUIDA) -->
+    <section class="testimonials-section custom-dot-grid" id="testimonios">
+      <div class="testimonials-container">
+        <h2 class="section-title testimonials-title"><span class="fw-regular">Lo que dicen</span> <span class="fw-bold">nuestros clientes</span></h2>
+        <div class="testimonials-deck-wrapper">
+          <div class="testimonials-deck" id="testimonials-deck">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card interactive" data-card="1">
+              <div class="quote-mark">“</div>
+              <div class="testimonial-quote">"Odesy entendió nuestro negocio antes de tocar el diseño. El resultado fue un sitio que no solo se ve increíble, también convierte."</div>
+              <div class="testimonial-author">
+                <strong>Cliente de e-commerce</strong>
+                <span>En expansión</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card interactive" data-card="2">
+              <div class="quote-mark">“</div>
+              <div class="testimonial-quote">"El acompañamiento fue integral: desde la estrategia hasta la producción final. Sentimos que teníamos un equipo extendido, no un proveedor externo."</div>
+              <div class="testimonial-author">
+                <strong>Marca corporativa</strong>
+                <span>En transformación digital</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card interactive" data-card="3">
+              <div class="quote-mark">“</div>
+              <div class="testimonial-quote">"Nos ayudaron a construir una identidad sólida desde cero, con una narrativa clara que hoy es el corazón de nuestra marca."</div>
+              <div class="testimonial-author">
+                <strong>Startup</strong>
+                <span>En fase de lanzamiento</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: CONTACTO (ÚLTIMA SECCIÓN - ESTILO EDITORIAL UNDERLINE Y BOTONES SOLID-TO-OUTLINE) -->
+    <section class="contact-section custom-dot-grid" id="contacto">
+      <div class="contact-container">
+        <div class="contact-card-box">
+          <div class="contact-header">
+            <h2 class="section-title"><span class="fw-regular">¿Tienes una idea?</span> <span class="fw-bold">Contáctanos</span></h2>
+            <p class="contact-subtitle">Cuéntanos sobre tu visión y diseñemos juntos el camino para hacerla realidad.</p>
+          </div>
+
+          <form class="contact-form-inline" id="contact-form-inline" onsubmit="event.preventDefault();">
+            
+            <!-- Multi-Select Interest Chips (Solid Black to Outline Hover) -->
+            <div class="interests-group">
+              <label class="interests-label">Estoy interesado en:</label>
+              <div class="chips-wrapper" id="chips-wrapper">
+                <button type="button" class="interest-chip interactive" data-interest="Diagnóstico">Diagnóstico</button>
+                <button type="button" class="interest-chip interactive" data-interest="Branding">Branding</button>
+                <button type="button" class="interest-chip interactive" data-interest="Estrategia">Estrategia</button>
+                <button type="button" class="interest-chip interactive" data-interest="Marketing Digital">Marketing Digital</button>
+                <button type="button" class="interest-chip interactive" data-interest="Producción Audiovisual">Producción Audiovisual</button>
+              </div>
+            </div>
+
+            <!-- Form Fields Grid (Underline Style Editorial) -->
+            <div class="form-fields-grid">
+              <div class="form-field">
+                <label for="inline-name">Nombre completo</label>
+                <input type="text" id="inline-name" class="form-input-underline interactive" placeholder="Escribe tu nombre..." required>
+              </div>
+              <div class="form-field">
+                <label for="inline-email">Correo electrónico</label>
+                <input type="email" id="inline-email" class="form-input-underline interactive" placeholder="correo@empresa.com" required>
+              </div>
+              <div class="form-field">
+                <label for="inline-phone">Teléfono</label>
+                <input type="tel" id="inline-phone" class="form-input-underline interactive" placeholder="+57 300 000 0000">
+              </div>
+              <div class="form-field full-width">
+                <label for="inline-message">Cuéntanos sobre tu proyecto</label>
+                <textarea id="inline-message" class="form-textarea-underline interactive" rows="3" placeholder="Describe los desafíos u objetivos de tu marca..." required></textarea>
+              </div>
+            </div>
+
+            <div class="contact-action-row">
+              <button type="submit" class="btn btn-contact-submit interactive" id="inline-submit">Enviar mensaje</button>
+            </div>
+            <div class="form-success-msg" id="inline-form-success">¡Mensaje enviado con éxito! Te responderemos muy pronto.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (REDES SOCIALES PRIMERO, DATOS DE CONTACTO DESPUÉS) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <img src="LOGOS ODESY/ODESY LOGO.svg" alt="Odesy Logo" class="footer-logo">
+          <div class="footer-tagline">Agencia de Marketing, Estrategia & Tecnología</div>
+        </div>
+
+        <!-- 1. Redes Sociales Primero -->
+        <div class="footer-socials-group">
+          <a href="#" class="social-unit interactive" aria-label="Instagram Odesyco">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span class="social-handle">Odesyco</span>
+          </a>
+
+          <a href="#" class="social-unit interactive" aria-label="YouTube Odesyco">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            <span class="social-handle">Odesyco</span>
+          </a>
+
+          <a href="#" class="social-unit interactive" aria-label="TikTok Odesyco">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+            <span class="social-handle">Odesyco</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Datos de Contacto Después -->
+      <div class="footer-contact-bar">
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="tel:+573001234567" class="contact-link">+57 300 123 4567</a>
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:hola@odesy.co" class="contact-link">hola@odesy.co</a>
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Cartagena, Colombia</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Odesy. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
