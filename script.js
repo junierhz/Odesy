@@ -488,35 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ------------------------------------------------------------------------
-     10. INFINITE FAQ CAROUSEL SLIDER
-     ------------------------------------------------------------------------ */
-  const faqTrack = document.getElementById('faq-track');
-  const faqPrevBtn = document.getElementById('faq-prev');
-  const faqNextBtn = document.getElementById('faq-next');
-  let currentFaqIndex = 0;
-  const totalFaqSlides = document.querySelectorAll('.faq-slide-item').length;
-
-  function updateFaqSlider() {
-    if (!faqTrack) return;
-    let cardStep = 408;
-    if (window.innerWidth <= 600) cardStep = 328;
-    faqTrack.style.transform = `translateX(-${currentFaqIndex * cardStep}px)`;
-  }
-
-  if (faqPrevBtn && faqNextBtn) {
-    faqPrevBtn.addEventListener('click', () => {
-      currentFaqIndex = (currentFaqIndex - 1 + totalFaqSlides) % totalFaqSlides;
-      updateFaqSlider();
-    });
-
-    faqNextBtn.addEventListener('click', () => {
-      currentFaqIndex = (currentFaqIndex + 1) % totalFaqSlides;
-      updateFaqSlider();
-    });
-  }
-
-  /* ------------------------------------------------------------------------
-     11. TESTIMONIALS DECK HOVER & CLICK UNFURL INTERACTION (SMOOTH & FLUID)
+     10. TESTIMONIALS DECK HOVER & CLICK UNFURL INTERACTION (SMOOTH & FLUID)
      ------------------------------------------------------------------------ */
   const testimonialsDeck = document.getElementById('testimonials-deck');
   if (testimonialsDeck) {
